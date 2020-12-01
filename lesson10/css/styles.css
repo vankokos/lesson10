@@ -1,0 +1,435 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+ul {
+  list-style: none;
+}
+
+.container {
+  width: 1110px;
+  margin: 0 auto;
+}
+
+.header {
+  padding: 15px 0px;
+}
+
+.header__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.header__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header__logo {
+  margin-right: 35px;
+}
+
+.header__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__list-item {
+  margin-right: 32px;
+  font-family: "manrope";
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 20px;
+  color: #18191F;
+}
+
+.header__list-item:last-child {
+  margin-right: 0px;
+}
+
+.header__list-item:hover {
+  color: lightblue;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  -webkit-text-decoration: wavy;
+          text-decoration: wavy;
+}
+
+.header__social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.header__social button {
+  height: 40px;
+  width: 135px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
+}
+
+.header__social button:hover {
+  background-color: lightblue;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.header__social-google {
+  background-image: url(../img/social2.svg);
+  margin-right: 12px;
+}
+
+.header__social-apple {
+  background-image: url(../img/social1.svg);
+}
+
+.main {
+  background-color: #0B0D17;
+  padding: 80px 0px;
+}
+
+.main__title {
+  font-family: "manrope";
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #FFFFFF;
+  margin-bottom: 50px;
+}
+
+.main__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+  margin-bottom: 48px;
+}
+
+.main__list-item {
+  background-color: white;
+  padding: 40px;
+  border-radius: 10px;
+}
+
+.main__list-item > img {
+  margin-bottom: 55px;
+}
+
+.main__list-title {
+  margin-bottom: 12px;
+  font-family: "manrope";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #18191F;
+}
+
+.main__list-text {
+  margin-bottom: 40px;
+  font-family: "manrope";
+  font-size: 16px;
+  line-height: 26px;
+  color: #18191F;
+}
+
+.main__list-link {
+  font-family: "manrope";
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 16px;
+  color: #8C30F5;
+  position: relative;
+}
+
+.main__list-link::after {
+  content: "";
+  background-image: url(../img/arrow.svg);
+  width: 16px;
+  height: 16px;
+  position: absolute;
+  background-repeat: no-repeat;
+  top: 4px;
+  right: -20px;
+}
+
+.main__list-link:hover {
+  color: purple;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.main__btn {
+  border: 1px solid white;
+  width: 180px;
+  height: 62px;
+  outline: none;
+  cursor: pointer;
+  background: none;
+  border-radius: 8px;
+  margin: 0 auto;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "manrope";
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.main__btn::after {
+  content: "";
+  background-image: url(../img/whitearrow.svg);
+  width: 24px;
+  height: 24px;
+  background-repeat: no-repeat;
+  margin-top: 11px;
+  margin-left: 15px;
+}
+
+.main__btn:hover {
+  background-color: lightblue;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  color: #18191F;
+  border-color: #18191F;
+}
+
+.features p {
+  text-align: center;
+}
+
+.features__divider {
+  background: -webkit-gradient(linear, left top, right top, from(rgba(192, 204, 218, 0.1)), color-stop(50.38%, rgba(192, 204, 218, 0.6)), to(rgba(192, 204, 218, 0.1)));
+  background: linear-gradient(90deg, rgba(192, 204, 218, 0.1) 0%, rgba(192, 204, 218, 0.6) 50.38%, rgba(192, 204, 218, 0.1) 100%);
+  height: 2px;
+  border: none;
+}
+
+.features__teams {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 30px 0px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features__teams-logos {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.features__teams-logos:hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.features__article-big {
+  margin-top: 64px;
+  margin-bottom: 8px;
+  font-family: "manrope";
+  font-weight: 800;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #18191F;
+}
+
+.features__article-small {
+  font-family: "manrope";
+  font-size: 18px;
+  line-height: 32px;
+  text-align: center;
+  color: #18191F;
+  margin-bottom: 48px;
+}
+
+.features__list {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-bottom: 64px;
+}
+
+.features__list-item {
+  padding: 15px;
+}
+
+.features__list-item:hover {
+  background-color: #fffaf1;
+  border-radius: 10px;
+  -webkit-transition: 0.8s;
+  transition: 0.8s;
+}
+
+.features__list-img {
+  margin-bottom: 25px;
+}
+
+.features__list-article-big {
+  margin-bottom: 8px;
+  font-family: "manrope";
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  text-align: center;
+  color: #18191F;
+}
+
+.features__list-article-small {
+  font-family: "manrope";
+  font-size: 16px;
+  line-height: 26px;
+  text-align: center;
+  color: #18191F;
+}
+
+.footer {
+  background-color: #0B0D17;
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
+
+.footer__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.footer__list a:hover {
+  text-decoration: underline;
+}
+
+.footer__list li {
+  font-family: "manrope";
+  font-size: 16px;
+  line-height: 26px;
+  color: #FFFFFF;
+  margin-right: 24px;
+}
+
+.footer__list button {
+  height: 40px;
+  width: 135px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: black;
+  border: none;
+  outline: none;
+  border-radius: 7px;
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.footer__list button:hover {
+  background-color: lightblue;
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.footer__list-left-logo {
+  margin-bottom: 24px;
+}
+
+.footer__list-left-logo:hover {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
+  -webkit-transition: 0.7s;
+  transition: 0.7s;
+}
+
+.footer__list-left-1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.footer__list-left-2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__list-left-copyright {
+  font-family: "manrope";
+  font-size: 14px;
+  line-height: 24px;
+  color: #D9DBE1;
+  margin-top: 30px;
+}
+
+.footer__list-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.footer__list-right-article {
+  font-family: "manrope";
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 28px;
+  color: #D9DBE1;
+}
+
+.footer__list-social-google {
+  background-image: url(../img/social2.svg);
+  margin: 20px 0px;
+}
+
+.footer__list-social-apple {
+  background-image: url(../img/social1.svg);
+}
+/*# sourceMappingURL=styles.css.map */
